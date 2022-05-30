@@ -5,7 +5,7 @@ from plotly.offline import iplot
 
 
 larin = 'gfgfgd'
-data = pd.read_csv('core\data\data.csv', encoding="ISO-8859-1",
+data = pd.read_csv('core/data/data.csv', encoding="ISO-8859-1",
                    dtype={'CustomerID': str, 'InvoiceID': str})
 
 # modifing invoiceDate type to datetime
@@ -123,7 +123,7 @@ nb_products_per_basket['order_canceled'] = nb_products_per_basket['InvoiceNo'].a
 # importing data after cleanig it by removing null values , cancelled orders and doubtfull entries :
 # ___________________
 
-df_cleaned = pd.read_csv('core\data\df_cleaned.csv')
+df_cleaned = pd.read_csv('core/data/df_cleaned.csv')
 # dropping the first column
 df_cleaned = df_cleaned.iloc[:, 1:]
 
