@@ -180,7 +180,7 @@ piechartt = piech.to_json()
 # ____________________
 # Creating clusters of products
 # ____________________
-X = pd.read_csv('core\data\X.csv')
+X = pd.read_csv('core/data/X.csv')
 # dropping the first column
 X = X.iloc[:, 1:]
 matrix = X.values
